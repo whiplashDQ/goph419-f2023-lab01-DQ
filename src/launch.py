@@ -4,7 +4,7 @@ import math
 
 def arcsin(x):
     """Calculate the inverse sine of x from  [-pi/2, pi/2] using the Taylor series]"""
-    n_max=600
+    n_max=100
     error_critertion=0.5*10**-5
     error_s= error_critertion
     n = 1
@@ -45,16 +45,16 @@ def min_altitude_ratio(ve_v0):
     """Utility function for computing minimum possible peak altitude ratio
     for a given velocity ratio.
     """
-    alpha = -(ve_v0**2 - 2) / (ve_v0**2 - 1)
-    #make sure alpha is not greater than 1
-    
+    alpha = (ve_v0**2 -2) / (1 - ve_v0**2 )
+    if alpha < 0:
+        alpha = 0
     return alpha
 
 def max_altitude_ratio(ve_v0):
     """Utility function for computing maximum possible peak altitude ratio
     for a given velocity ratio.
     """
-    alpha = 1/((ve_v0**2)-1)
+    alpha = -1 / (1 - ve_v0**2 )
     return alpha 
 
 
@@ -71,4 +71,4 @@ def max_velocity_ratio(alpha):
     for a given target peak altitude ratio.
     """
     ve_v0 = np.sqrt((1 + alpha) / alpha)
-    return 
+    return ve_v0
