@@ -41,7 +41,7 @@ def main():
     plt.title('Alpha vs Launch Angle Range')
     plt.legend()
     # Save the plot in the figures folder
-    plt.savefig("E:/goph_419/lab01/goph419-f2023-lab01-DQ/figures/alpha_vs_launch_angle_range.png")
+    plt.savefig("E:/goph_419/lab01/goph419-f2023-lab01-DQ/figures/launch_angle_range_vs_alpha.png")
     plt.show()
 
 
@@ -73,7 +73,7 @@ def main():
     plt.title('ve_v0 vs Launch Angle Range')
     plt.legend()
     # Save the plot in the figures folder
-    plt.savefig("E:/goph_419/lab01/goph419-f2023-lab01-DQ/figures/ve_v0_vs_Launch_angle_range.png")
+    plt.savefig("E:/goph_419/lab01/goph419-f2023-lab01-DQ/figures/Launch_angle_range_vs_ve_v0.png")
     plt.show()
 
 if __name__ == "__main__":
