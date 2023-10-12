@@ -13,6 +13,7 @@ def main():
     values for ve_v0, alpha, and tol_alpha.
     """
 
+
     """ plot launch angle range for a fixed velocity ratio
     """
     ve_v0 = 2.0 #fixed velocity ratio
