@@ -3,5 +3,5 @@
 *Instructor:* B. Karchewski
 *Author:* Dennis Qu 
 
-This code is to set a sysetme to calculate the available range for the first stage rockect lunch angles to reach maximum altitude.
+This code is to set a system to calculate the available range for the first-stage rocket launch angles to reach maximum altitude.
  
